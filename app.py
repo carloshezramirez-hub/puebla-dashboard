@@ -3,64 +3,119 @@ import pandas as pd
 import pydeck as pdk
 import altair as alt
 import json
+from pathlib import Path
 
-st.set_page_config(page_title="Tablero Puebla", layout="wide")
+# ================== CONFIG BÁSICA ==================
+st.set_page_config(
+    page_title="Tablero Puebla",
+    page_icon="📊",
+    layout="wide"
+)
 
-# =============== Ayudas rápidas en la interfaz ===============
-with st.sidebar:
-    st.title("Tablero Puebla (Demo)")
+# Paleta de colores (look pro y consistente)
+PALETTE = {
+    "Alta": "#d7191c",
+    "Media": "#fdae61",
+    "Baja": "#abd9e9",
+    "Otra": "#2c7fb8",
+    "Default": "#bdbdbd"
+}
+
+# ================== AUTENTICACIÓN SIMPLE ==================
+# La contraseña se guarda en Secrets: [auth] password="..."
+APP_PASSWORD = st.secrets.get("auth", {}).get("password")
+
+def ask_password():
     st.markdown("""
-Sube tu **Excel o CSV** con columnas como:
-- DISTRITO FEDERAL
-- DISTRITO LOCAL
-- TIPO DE SECCION
-- MUNICIPIO
-- NOMBRE DEL MUNICIPIO
-- TIPO DE COLONIA
-- NOMBRE DE LA COLONIA
-- CP
-- PRIORIDAD
-Opcionales (si tienes): **NUM_PROMOVIDOS**, **PAUTA_INVERTIDA**, **VISUALIZACIONES**, **DEMOGRAFIA**, **PREF_ELECTORAL**.
-""")
+    <div style="display:flex;min-height:60vh;align-items:center;justify-content:center;">
+      <div style="max-width:420px;width:100%;padding:24px;border:1px solid #eee;border-radius:16px;background:white;box-shadow:0 6px 24px rgba(0,0,0,.06);">
+        <h3 style="margin-top:0;margin-bottom:8px;font-weight:700;">Acceso</h3>
+        <p style="margin-top:0;color:#666;">Ingresa la contraseña para ver el tablero.</p>
+    """, unsafe_allow_html=True)
+    with st.form("login", clear_on_submit=False):
+        pwd = st.text_input("Contraseña", type="password")
+        ok = st.form_submit_button("Entrar")
+    st.markdown("</div></div>", unsafe_allow_html=True)
+    return ok, pwd
 
-# =============== Cargar datos ===============
-st.subheader("1) Datos")
-uploaded = st.file_uploader("Sube tu archivo (.xlsx o .csv):", type=["xlsx", "csv"])
-
-def read_file(file):
-    if file.name.lower().endswith(".xlsx"):
-        return pd.read_excel(file, engine="openpyxl")
-    else:
-        return pd.read_csv(file)
-
-if uploaded:
-    df = read_file(uploaded)
+if APP_PASSWORD:
+    if "auth_ok" not in st.session_state:
+        st.session_state.auth_ok = False
+    if not st.session_state.auth_ok:
+        ok, pwd = ask_password()
+        if ok:
+            if pwd == APP_PASSWORD:
+                st.session_state.auth_ok = True
+                st.rerun()
+            else:
+                st.error("Contraseña incorrecta.")
+                st.stop()
 else:
-    # Datos de demo si no subes nada
-    df = pd.read_csv("data_demo.csv")
+    st.warning("No hay contraseña configurada (Secrets). Te recomendamos agregar una.")
 
-st.dataframe(df.head(20))
+# ================== RUTAS DE ARCHIVOS ==================
+DATA_DIR = Path("data")
+CSV_PATH = DATA_DIR / "datos_puebla.csv"              # <- tu tabla principal
+GEOJSON_PATH = DATA_DIR / "secciones_puebla.geojson"  # <- tu mapa de secciones
 
-# Normalizar nombres de columnas (tolerante a mayúsculas/minúsculas y espacios)
-def norm_cols(d):
-    d = d.copy()
-    d.columns = [c.strip().upper() for c in d.columns]
-    return d
+# ================== CARGA CON CACHÉ (RÁPIDO) ==================
+@st.cache_data(show_spinner=False)
+def load_table(path: Path) -> pd.DataFrame:
+    if not path.exists():
+        st.stop()
+    df = pd.read_csv(path)
+    df.columns = [c.strip().upper() for c in df.columns]
+    return df
 
-df = norm_cols(df)
+@st.cache_data(show_spinner=False)
+def load_geojson(path: Path) -> dict:
+    if not path.exists():
+        st.stop()
+    with open(path, "r", encoding="utf-8") as f:
+        gj = json.load(f)
+    return gj
 
-# =============== Filtros ===============
-st.subheader("2) Filtros")
-col1, col2, col3 = st.columns(3)
+@st.cache_data(show_spinner=False)
+def hex_to_rgba(hex_color: str, alpha: int = 140):
+    """Convierte '#RRGGBB' a [R,G,B,A] con alfa (0-255)."""
+    hex_color = hex_color.lstrip("#")
+    r, g, b = tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
+    return [r, g, b, alpha]
 
-prioridades = ["Todos"] + sorted([str(x) for x in df["PRIORIDAD"].dropna().unique()]) if "PRIORIDAD" in df.columns else ["Todos"]
-municipios = ["Todos"] + sorted([str(x) for x in df["MUNICIPIO"].dropna().unique()]) if "MUNICIPIO" in df.columns else ["Todos"]
-distritos = ["Todos"] + sorted([str(x) for x in df["DISTRITO LOCAL"].dropna().unique()]) if "DISTRITO LOCAL" in df.columns else ["Todos"]
+# ================== CARGA DE DATOS ==================
+try:
+    df = load_table(CSV_PATH)
+except Exception:
+    st.error("No se encontró `data/datos_puebla.csv`. Coloca tus datos allí y recarga.")
+    st.stop()
 
-sel_prio = col1.selectbox("Prioridad", prioridades, index=0)
-sel_mun  = col2.selectbox("Municipio", municipios, index=0)
-sel_dist = col3.selectbox("Distrito Local", distritos, index=0)
+try:
+    geojson_obj = load_geojson(GEOJSON_PATH)
+except Exception:
+    st.error("No se encontró `data/secciones_puebla.geojson`. Coloca tu GeoJSON allí y recarga.")
+    st.stop()
 
+# ================== SIDEBAR: FILTROS ==================
+with st.sidebar:
+    st.markdown("### Filtros")
+    # Listas seguras
+    prioridades = ["Todos"]
+    if "PRIORIDAD" in df.columns:
+        prioridades += sorted([str(x) for x in df["PRIORIDAD"].dropna().unique()])
+
+    municipios = ["Todos"]
+    if "MUNICIPIO" in df.columns:
+        municipios += sorted([str(x) for x in df["MUNICIPIO"].dropna().unique()])
+
+    distritos = ["Todos"]
+    if "DISTRITO LOCAL" in df.columns:
+        distritos += sorted([str(x) for x in df["DISTRITO LOCAL"].dropna().unique()])
+
+    sel_prio = st.selectbox("Prioridad", prioridades, index=0)
+    sel_mun = st.selectbox("Municipio", municipios, index=0)
+    sel_dist = st.selectbox("Distrito Local", distritos, index=0)
+
+# Aplica filtros
 df_f = df.copy()
 if "PRIORIDAD" in df_f.columns and sel_prio != "Todos":
     df_f = df_f[df_f["PRIORIDAD"].astype(str) == str(sel_prio)]
@@ -69,11 +124,8 @@ if "MUNICIPIO" in df_f.columns and sel_mun != "Todos":
 if "DISTRITO LOCAL" in df_f.columns and sel_dist != "Todos":
     df_f = df_f[df_f["DISTRITO LOCAL"].astype(str) == str(sel_dist)]
 
-st.caption(f"Filas después de filtros: {len(df_f)}")
-
-# =============== Métricas clave ===============
-st.subheader("3) Métricas clave")
-m1, m2, m3, m4 = st.columns(4)
+# ================== MÉTRICAS + RESUMEN ==================
+st.markdown("## Métricas clave y resumen")
 
 def safe_sum(col):
     return int(pd.to_numeric(df_f.get(col, pd.Series([])), errors="coerce").fillna(0).sum())
@@ -83,105 +135,110 @@ num_promovidos = safe_sum("NUM_PROMOVIDOS")
 pauta_invertida = safe_sum("PAUTA_INVERTIDA")
 num_visualizaciones = safe_sum("VISUALIZACIONES")
 
-m1.metric("Número de seccionales", num_seccionales)
-m2.metric("Número de promovidos", num_promovidos)
+m1, m2, m3, m4 = st.columns(4)
+m1.metric("Secciones", num_seccionales)
+m2.metric("Promovidos", num_promovidos)
 m3.metric("Pauta invertida", pauta_invertida)
 m4.metric("Visualizaciones", num_visualizaciones)
 
-# =============== Gráficos simples ===============
-st.subheader("4) Gráficos")
-charts_row = st.columns(2)
+st.caption("El tablero muestra únicamente información (no permite subir archivos). Los filtros están a la izquierda.")
 
-# Barras por Prioridad
+# ================== GRÁFICOS ==================
+st.markdown("## Gráficos")
+
+# 1) Barras por Prioridad
 if "PRIORIDAD" in df_f.columns:
     prio_counts = df_f["PRIORIDAD"].astype(str).value_counts().reset_index()
     prio_counts.columns = ["PRIORIDAD", "CUENTA"]
-    chart1 = alt.Chart(prio_counts).mark_bar().encode(
-        x=alt.X("PRIORIDAD:N", sort="-y"),
-        y="CUENTA:Q",
-        tooltip=["PRIORIDAD", "CUENTA"]
-    ).properties(title="Secciones por Prioridad")
-    charts_row[0].altair_chart(chart1, use_container_width=True)
-
-# Pie por Municipio (top 10)
-if "MUNICIPIO" in df_f.columns:
-    mun_counts = df_f["MUNICIPIO"].astype(str).value_counts().reset_index().head(10)
-    mun_counts.columns = ["MUNICIPIO", "CUENTA"]
-    chart2 = alt.Chart(mun_counts).mark_arc().encode(
-        theta="CUENTA:Q",
-        color="MUNICIPIO:N",
-        tooltip=["MUNICIPIO", "CUENTA"]
-    ).properties(title="Top 10 Municipios (por número de filas)")
-    charts_row[1].altair_chart(chart2, use_container_width=True)
-
-# Serie (si hay VISUALIZACIONES por FECHA opcional)
-if "FECHA" in df_f.columns and "VISUALIZACIONES" in df_f.columns:
-    st.subheader("Serie de tiempo (Visualizaciones por fecha)")
-    tmp = df_f.copy()
-    tmp["FECHA"] = pd.to_datetime(tmp["FECHA"], errors="coerce")
-    series = tmp.groupby("FECHA", dropna=True)["VISUALIZACIONES"].sum().reset_index()
-    chart3 = alt.Chart(series).mark_line(point=True).encode(
-        x="FECHA:T",
-        y="VISUALIZACIONES:Q",
-        tooltip=["FECHA","VISUALIZACIONES"]
+    # Mapea colores por prioridad
+    prio_counts["COLOR"] = prio_counts["PRIORIDAD"].map(lambda x: PALETTE.get(x, PALETTE["Default"]))
+    chart1 = (
+        alt.Chart(prio_counts)
+        .mark_bar(cornerRadiusTopLeft=6, cornerRadiusTopRight=6)
+        .encode(
+            x=alt.X("PRIORIDAD:N", sort="-y", title="Prioridad"),
+            y=alt.Y("CUENTA:Q", title="Secciones"),
+            color=alt.Color("PRIORIDAD:N", scale=alt.Scale(range=list(prio_counts["COLOR"])), legend=None),
+            tooltip=["PRIORIDAD", "CUENTA"]
+        )
+        .properties(title="Secciones por prioridad")
     )
-    st.altair_chart(chart3, use_container_width=True)
+    st.altair_chart(chart1, use_container_width=True)
 
-# =============== Mapa de secciones ===============
-st.subheader("5) Mapa de secciones (Puebla)")
+# 2) Dona por Municipio (Top 8)
+if "MUNICIPIO" in df_f.columns:
+    mun_counts = df_f["MUNICIPIO"].astype(str).value_counts().reset_index().head(8)
+    mun_counts.columns = ["MUNICIPIO", "CUENTA"]
+    chart2 = (
+        alt.Chart(mun_counts)
+        .mark_arc(innerRadius=60)
+        .encode(
+            theta="CUENTA:Q",
+            color=alt.Color("MUNICIPIO:N", legend=None),
+            tooltip=["MUNICIPIO", "CUENTA"]
+        )
+        .properties(title="Municipios (Top 8)")
+    )
+    st.altair_chart(chart2, use_container_width=True)
 
-st.markdown("""
-**¿De dónde saco el mapa (.geojson)?**  
-Para producción, usa la cartografía de **secciones electorales** del INE/IEE.  
-Mientras tanto, este demo usa un archivo pequeño `puebla_secciones_demo.geojson` con 2 polígonos para que veas la app funcionando.
-""")
+# ================== MAPA ==================
+st.markdown("## Mapa de secciones (Puebla)")
 
-# Selección de archivo geojson
-gfile = st.file_uploader("Sube tu archivo GeoJSON de secciones", type=["geojson"], key="geojsonuploader")
-if gfile:
-    geojson_obj = json.load(gfile)
-else:
-    with open("puebla_secciones_demo.geojson", "r", encoding="utf-8") as f:
-        geojson_obj = json.load(f)
+# Prepara un dict {SECCION -> PRIORIDAD} del df filtrado
+prio_by_seccion = {}
+if "SECCION" in df_f.columns and "PRIORIDAD" in df_f.columns:
+    tmp = df_f[["SECCION", "PRIORIDAD"]].dropna()
+    prio_by_seccion = {str(r.SECCION): str(r.PRIORIDAD) for r in tmp.itertuples(index=False)}
 
-# Si tu data tiene una columna que "relacione" con el GeoJSON (por ejemplo SECCION),
-# puedes mostrar tooltip con datos tabulares filtrados.
-# En el demo asumimos que en el GeoJSON hay una propiedad "SECCION".
-prop_key = "SECCION"
+# Enriquecer cada feature con COLOR según PRIORIDAD del filtro
+features = geojson_obj.get("features", [])
+for feat in features:
+    props = feat.get("properties", {})
+    sec = str(props.get("SECCION", ""))
+    prioridad = prio_by_seccion.get(sec)  # puede ser None si está filtrado fuera
+    if prioridad is None:
+        # Si la sección no cumple el filtro, la pintamos gris muy claro
+        color = hex_to_rgba("#E0E0E0", alpha=80)
+    else:
+        color = hex_to_rgba(PALETTE.get(prioridad, PALETTE["Default"]), alpha=140)
+    props["__FILL_COLOR__"] = color
+    props["__PRIORIDAD__"] = prioridad if prioridad else "Fuera de filtro"
 
-# Construir capa GeoJSON
+# Capa GeoJSON
 layer = pdk.Layer(
     "GeoJsonLayer",
     data=geojson_obj,
     pickable=True,
     stroked=True,
     filled=True,
-    get_fill_color=[180, 180, 200, 120],
-    get_line_color=[60, 60, 120, 180],
+    get_fill_color="properties.__FILL_COLOR__",
+    get_line_color=[70, 70, 90, 180],
     line_width_min_pixels=1,
 )
 
-# Vista inicial centrada en Puebla (aprox)
-view_state = pdk.ViewState(latitude=19.0379, longitude=-98.2035, zoom=9)
+# Vista centrada en Puebla
+view_state = pdk.ViewState(latitude=19.0379, longitude=-98.2035, zoom=9.4)
 
 r = pdk.Deck(
     layers=[layer],
     initial_view_state=view_state,
     tooltip={
-        "html": "<b>Sección:</b> {SECCION}",
-        "style": {"backgroundColor": "white", "color": "black"}
+        "html": "<b>Sección:</b> {SECCION}<br/><b>Prioridad:</b> {__PRIORIDAD__}",
+        "style": {"backgroundColor": "white", "color": "#111"}
     },
     map_style="light"
 )
 st.pydeck_chart(r, use_container_width=True)
 
-# =============== Resumen claro y visual ===============
-st.subheader("6) Resumen")
-st.write(f"""
-- Secciones (filtradas): **{num_seccionales}**  
-- Promovidos totales: **{num_promovidos}**  
-- Pauta invertida total: **{pauta_invertida}**  
-- Visualizaciones totales: **{num_visualizaciones}**  
-""")
-
-st.info("Más adelante: integrar sugerencias con IA (ChatGPT) usando la API de OpenAI o funciones de Streamlit. Cuando quieras, te dejo el bloque listo.")
+# Leyenda simple
+st.markdown("#### Leyenda")
+legend_cols = st.columns(4)
+legend_items = ["Alta", "Media", "Baja", "Fuera de filtro"]
+legend_colors = [PALETTE["Alta"], PALETTE["Media"], PALETTE["Baja"], "#E0E0E0"]
+for c, name, colhex in zip(legend_cols, legend_items, legend_colors):
+    c.markdown(f"""
+    <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:14px;height:14px;border-radius:4px;background:{colhex};border:1px solid #999;"></div>
+        <span style="font-size:0.9rem;">{name}</span>
+    </div>
+    """, unsafe_allow_html=True)
