@@ -4,14 +4,14 @@
 __pycache__/
 .DS_Store
 
-# Shapefiles fuente (pesados) - solo versionamos el GeoJSON final
+# Shapefiles fuente (solo versionamos el GeoJSON final)
 data/shp_seccion/
+
+# Dev containers (no usados)
+.devcontainer/
 
 # Backups accidentales
 *.save
 
-# Secretos locales de Streamlit (si existiera)
+# Secretos locales de Streamlit (NO públicos)
 .streamlit/secrets.toml
-
-# (Opcional) descomenta si NO quieres versionar el modelo entrenado
-# data/model.joblib
