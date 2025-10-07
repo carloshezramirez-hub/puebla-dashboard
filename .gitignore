@@ -1,14 +1,17 @@
-# Entornos y cachés
+# Entornos / cachés / sistema
 .venv/
 .venv311/
 __pycache__/
 .DS_Store
 
-# Streamlit secretos locales (no públicos)
-.streamlit/secrets.toml
+# Shapefiles fuente (pesados) - solo versionamos el GeoJSON final
+data/shp_seccion/
 
-# Artefactos/respaldos
+# Backups accidentales
 *.save
 
-# Modelos binarios (opcional: mantenlos locales)
-data/model.joblib
+# Secretos locales de Streamlit (si existiera)
+.streamlit/secrets.toml
+
+# (Opcional) descomenta si NO quieres versionar el modelo entrenado
+# data/model.joblib
