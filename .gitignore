@@ -1,0 +1,14 @@
+# Entornos y cachés
+.venv/
+.venv311/
+__pycache__/
+.DS_Store
+
+# Streamlit secretos locales (no públicos)
+.streamlit/secrets.toml
+
+# Artefactos/respaldos
+*.save
+
+# Modelos binarios (opcional: mantenlos locales)
+data/model.joblib
