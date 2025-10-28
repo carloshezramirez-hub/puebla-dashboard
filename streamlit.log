@@ -1,0 +1,1253 @@
+2025-10-28 14:21:07.365 Starting server...
+2025-10-28 14:21:07.365 Serving static content from /Users/carlos/puebla-dashboard/.venv/lib/python3.13/site-packages/streamlit/static
+2025-10-28 14:21:07.367 Server started on port 8501
+2025-10-28 14:21:07.367 Runtime state: RuntimeState.INITIAL -> RuntimeState.NO_SESSIONS_CONNECTED
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.0.12:8501
+
+2025-10-28 14:21:07.414 Setting up signal handler
+2025-10-28 14:21:07.731 AppSession initialized (id=dc9e2631-b515-4967-9320-778964480474)
+2025-10-28 14:21:07.731 Created new session for client 4400117280. Session ID: dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:21:07.731 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:21:07.731 Received the following back message:
+rerun_script {
+  widget_states {
+  }
+}
+
+2025-10-28 14:21:07.732 Beginning script thread
+2025-10-28 14:21:07.732 Running script RerunData(widget_states=)
+2025-10-28 14:21:07.732 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:21:07.732 Sessions still active: dict_keys([])
+2025-10-28 14:21:07.732 Files: 0; Sessions with files: 0
+2025-10-28 14:21:08.271 Creating new DataCache (key=f65287814973c182868693e3f06c1cf1, persist=None, max_entries=None, ttl=None)
+2025-10-28 14:21:08.271 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:21:08.271 Memory cache MISS: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:21:08.271 Memory cache MISS: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:21:08.280 Memory cache MISS: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:21:08.281 Creating new DataCache (key=b345b93e0096ce4a300ee5f34da6ddc6, persist=None, max_entries=None, ttl=None)
+2025-10-28 14:21:08.281 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:21:08.281 Memory cache MISS: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:21:08.281 Memory cache MISS: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:21:08.500 Memory cache MISS: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:21:08.545 Creating new DataCache (key=5b8aa06a8d359d9928e443785bb247f0, persist=None, max_entries=None, ttl=None)
+2025-10-28 14:21:11.261 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:11.261 Memory cache MISS: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:11.261 Memory cache MISS: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:11.261 Memory cache MISS: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:11.418 Creating new DataCache (key=4c9fa1b041c4f0a84a1a6a20aecc811b, persist=None, max_entries=None, ttl=None)
+2025-10-28 14:21:14.123 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:21:14.123 Memory cache MISS: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:21:14.123 Memory cache MISS: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:21:14.301 Memory cache MISS: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:21:17.025 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:17.025 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:17.814 Caching message (hash=39cfe70fd940b439f094e79482f08515)
+2025-10-28 14:21:17.964 Caching message (hash=faef0d7ff408d52680b4c0c8fa61a857)
+2025-10-28 14:21:18.036 Caching message (hash=d4b99e74201a61eaff7a48064e330f4d)
+2025-10-28 14:21:18.074 Caching message (hash=638e25d526d4440ae7a8f1d5bfaa6baf)
+2025-10-28 14:21:18.086 Removing orphaned files...
+2025-10-28 14:21:18.200 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:21:21.379 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:21:22.622 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:21:22.635 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: true
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:21:22.636 Beginning script thread
+2025-10-28 14:21:22.636 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: true
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:21:22.636 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:21:22.636 Sessions still active: dict_keys([])
+2025-10-28 14:21:22.637 Files: 0; Sessions with files: 0
+2025-10-28 14:21:22.641 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:21:22.641 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:21:22.643 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:21:22.644 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:21:25.620 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:25.620 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:28.659 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:21:28.659 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:21:31.425 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:31.425 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:32.423 Caching message (hash=ecaef4aadfd4919ad45b197b5b7a6a22)
+2025-10-28 14:21:32.584 Caching message (hash=c6757cd0d1717801b58d84917029bcd7)
+2025-10-28 14:21:32.660 Caching message (hash=ddb7c4d7e30963d2965b39706958cae5)
+2025-10-28 14:21:32.696 Removing orphaned files...
+2025-10-28 14:21:32.898 Caching message (hash=162196335570424ab6df0ddaa54f558b)
+2025-10-28 14:21:32.925 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:21:36.155 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:21:37.261 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:21:37.263 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: true
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:21:37.264 Beginning script thread
+2025-10-28 14:21:37.264 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: true
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:21:37.264 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:21:37.264 Sessions still active: dict_keys([])
+2025-10-28 14:21:37.264 Files: 0; Sessions with files: 0
+2025-10-28 14:21:37.270 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:21:37.270 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:21:37.272 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:21:37.272 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:21:40.313 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:40.313 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:43.555 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:21:43.555 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:21:46.368 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:46.368 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:47.370 Caching message (hash=d00420ed0c2968d0ebcb1562a84e3fca)
+2025-10-28 14:21:47.519 Caching message (hash=a9b3bf3536c79fc3376492e910baa82a)
+2025-10-28 14:21:47.592 Caching message (hash=6447a9f5e2d94ce810f8bb9b138b9575)
+2025-10-28 14:21:47.626 Removing orphaned files...
+2025-10-28 14:21:47.822 Caching message (hash=43aa5fde2832f873a926ea075a3d993c)
+2025-10-28 14:21:47.848 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:21:51.079 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:21:52.231 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:21:52.234 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: true
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:21:52.235 Beginning script thread
+2025-10-28 14:21:52.235 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: true
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:21:52.235 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:21:52.235 Sessions still active: dict_keys([])
+2025-10-28 14:21:52.235 Files: 0; Sessions with files: 0
+2025-10-28 14:21:52.240 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:21:52.240 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:21:52.242 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:21:52.242 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:21:55.293 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:55.293 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:21:58.566 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:21:58.566 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:22:01.496 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:01.496 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:02.527 Caching message (hash=e27b3ecf072181aea93a8f24ffd8748b)
+2025-10-28 14:22:02.679 Caching message (hash=ba096300d60982e1882845d2d6a4aacd)
+2025-10-28 14:22:02.752 Caching message (hash=c95b6633b7b2a0dcdde0f68faa922178)
+2025-10-28 14:22:02.786 Removing orphaned files...
+2025-10-28 14:22:02.992 Caching message (hash=5989cf2d160aeb6b850766e596147762)
+2025-10-28 14:22:03.019 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:22:06.559 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:22:07.401 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:22:07.401 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: true
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:22:07.401 Beginning script thread
+2025-10-28 14:22:07.401 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: true
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:22:07.402 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:22:07.402 Sessions still active: dict_keys([])
+2025-10-28 14:22:07.402 Files: 0; Sessions with files: 0
+2025-10-28 14:22:07.409 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:22:07.409 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:22:07.412 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:22:07.412 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:22:10.515 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:10.515 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:13.788 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:22:13.788 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:22:16.653 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:16.653 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:17.676 Caching message (hash=4f2bbf48be1e97507c1e4acca67f2b75)
+2025-10-28 14:22:17.824 Caching message (hash=46418f9aad5baa7ae1b6a247e6f1a1ed)
+2025-10-28 14:22:17.900 Caching message (hash=7305e04a292a8b38f31cdde747c3e693)
+2025-10-28 14:22:17.934 Removing orphaned files...
+2025-10-28 14:22:18.137 Caching message (hash=1cf1c41121af1c715b4f2276529f2fca)
+2025-10-28 14:22:18.164 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:22:21.433 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:22:22.562 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:22:22.563 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: true
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:22:22.563 Beginning script thread
+2025-10-28 14:22:22.563 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: true
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:22:22.563 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:22:22.563 Sessions still active: dict_keys([])
+2025-10-28 14:22:22.563 Files: 0; Sessions with files: 0
+2025-10-28 14:22:22.567 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:22:22.567 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:22:22.570 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:22:22.570 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:22:25.707 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:25.708 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:29.004 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:22:29.004 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:22:31.945 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:31.946 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:32.960 Caching message (hash=cbd1aa15ae08c70e474845f269200df3)
+2025-10-28 14:22:33.107 Caching message (hash=7547d774b84886e4deacba65c9c35280)
+2025-10-28 14:22:33.183 Caching message (hash=03be54b8fa72be814e99f956b634c4ce)
+2025-10-28 14:22:33.216 Removing orphaned files...
+2025-10-28 14:22:33.422 Caching message (hash=c5041aeed0298267ed47833601caf4ea)
+2025-10-28 14:22:33.449 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:22:36.802 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:22:38.040 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:22:38.041 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: true
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:22:38.041 Beginning script thread
+2025-10-28 14:22:38.041 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: true
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:22:38.041 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:22:38.041 Sessions still active: dict_keys([])
+2025-10-28 14:22:38.041 Files: 0; Sessions with files: 0
+2025-10-28 14:22:38.046 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:22:38.046 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:22:38.048 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:22:38.048 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:22:41.214 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:41.214 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:44.588 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:22:44.588 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:22:47.494 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:47.495 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:22:48.493 Caching message (hash=1b19802d348f37fe9f4b8ddffc0e587b)
+2025-10-28 14:22:48.712 Caching message (hash=4151a8f86fb58ca367c898e44aaaceec)
+2025-10-28 14:22:48.753 Removing orphaned files...
+2025-10-28 14:22:48.960 Caching message (hash=58ca029bea5e8e3fccf80dbc0c081ed5)
+2025-10-28 14:22:48.984 Caching message (hash=7103f309ce29746de9ab6d6bbad883d8)
+2025-10-28 14:22:48.998 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:22:53.387 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:22:56.870 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:22:56.870 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: true
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:22:56.871 Beginning script thread
+2025-10-28 14:22:56.871 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: true
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:22:56.871 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:22:56.871 Sessions still active: dict_keys([])
+2025-10-28 14:22:56.871 Files: 0; Sessions with files: 0
+2025-10-28 14:22:56.877 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:22:56.877 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:22:56.880 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:22:56.881 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:23:00.103 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:00.103 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:03.543 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:23:03.543 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:23:06.449 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:06.449 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:07.516 Caching message (hash=aed12045a1f1ecaafdb6034f90b675dd)
+2025-10-28 14:23:07.677 Caching message (hash=3d5a3d5e0a9d07867a2b16275f8c5e43)
+2025-10-28 14:23:07.754 Caching message (hash=20639cea43f8aa9047ce5ebc3bedf930)
+2025-10-28 14:23:07.791 Removing orphaned files...
+2025-10-28 14:23:07.997 Caching message (hash=b9af05a02cd821663585225e22c43d43)
+2025-10-28 14:23:08.026 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:23:12.293 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:23:15.742 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:23:15.744 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: true
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:23:15.744 Beginning script thread
+2025-10-28 14:23:15.744 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: true
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:23:15.744 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:23:15.744 Sessions still active: dict_keys([])
+2025-10-28 14:23:15.745 Files: 0; Sessions with files: 0
+2025-10-28 14:23:15.752 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:23:15.752 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:23:15.755 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:23:15.755 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:23:18.990 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:18.990 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:22.433 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:23:22.433 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:23:25.340 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:25.340 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:26.380 Caching message (hash=e9c648a5766f3fcd4572b1a16f873a68)
+2025-10-28 14:23:26.559 Caching message (hash=5ee6308c4ea676ff20495b81d94269d7)
+2025-10-28 14:23:26.642 Caching message (hash=3a1ed89cef4cc4556d552ae5ad326442)
+2025-10-28 14:23:26.679 Removing orphaned files...
+2025-10-28 14:23:26.889 Caching message (hash=d6a996c7719e2ac8f39a12c5f441e30e)
+2025-10-28 14:23:26.916 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:23:32.879 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:23:34.805 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:23:34.806 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: true
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:23:34.806 Beginning script thread
+2025-10-28 14:23:34.806 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: true
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:23:34.806 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:23:34.806 Sessions still active: dict_keys([])
+2025-10-28 14:23:34.806 Files: 0; Sessions with files: 0
+2025-10-28 14:23:34.812 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:23:34.812 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:23:34.813 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:23:34.813 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:23:38.200 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:38.200 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:41.586 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:23:41.586 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:23:44.489 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:44.489 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:45.555 Caching message (hash=c2c1c6ea80de8799ad8ec3cb345ee561)
+2025-10-28 14:23:45.730 Caching message (hash=5be7372fd4eab5c51558f744c7ae426b)
+2025-10-28 14:23:45.807 Caching message (hash=441df9d074a8dcb3dcd99be7eaa30890)
+2025-10-28 14:23:45.842 Removing orphaned files...
+2025-10-28 14:23:46.057 Caching message (hash=6c4b9e00f14673658de915543fd44491)
+2025-10-28 14:23:46.084 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:23:50.643 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:23:54.086 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:23:54.087 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: true
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:23:54.088 Beginning script thread
+2025-10-28 14:23:54.088 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: true
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:23:54.088 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:23:54.088 Sessions still active: dict_keys([])
+2025-10-28 14:23:54.088 Files: 0; Sessions with files: 0
+2025-10-28 14:23:54.093 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:23:54.093 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:23:54.095 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:23:54.095 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:23:57.439 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:23:57.440 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:00.842 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:24:00.842 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:24:04.148 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:04.149 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:04.459 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+      bool_value: false
+    }
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:24:04.459 Beginning script thread
+2025-10-28 14:24:04.459 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-474912bd1fa8df9e38ffe7783e054d70-None"
+  bool_value: false
+}
+widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:24:04.459 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:24:04.459 Sessions still active: dict_keys([])
+2025-10-28 14:24:04.459 Files: 0; Sessions with files: 0
+2025-10-28 14:24:04.460 Ignoring event from non-current ScriptRunner: ScriptRunnerEvent.ENQUEUE_FORWARD_MSG
+2025-10-28 14:24:04.462 Removing orphaned files...
+2025-10-28 14:24:04.675 Ignoring event from non-current ScriptRunner: ScriptRunnerEvent.ENQUEUE_FORWARD_MSG
+2025-10-28 14:24:04.675 Ignoring event from non-current ScriptRunner: ScriptRunnerEvent.SCRIPT_STOPPED_WITH_SUCCESS
+2025-10-28 14:24:04.675 Ignoring event from non-current ScriptRunner: ScriptRunnerEvent.SHUTDOWN
+2025-10-28 14:24:04.676 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:24:04.676 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:24:04.676 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:24:04.677 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:24:07.880 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:07.880 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:11.313 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:24:11.314 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:24:14.322 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:14.322 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:14.628 Removing orphaned files...
+2025-10-28 14:24:14.828 Running script RerunData(page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:24:14.828 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:24:14.828 Sessions still active: dict_keys([])
+2025-10-28 14:24:14.828 Files: 0; Sessions with files: 0
+2025-10-28 14:24:14.829 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:24:14.829 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:24:14.830 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:24:14.830 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:24:18.163 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:18.163 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:21.317 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:24:21.317 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:24:24.300 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:24.300 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:25.326 Caching message (hash=c70bd230a1a75182ad9d8835bc33e607)
+2025-10-28 14:24:25.492 Caching message (hash=adf5d7e7e2a38de9da2ea27d807f371e)
+2025-10-28 14:24:25.575 Caching message (hash=f5dd1f1856f86f23b4cd2db2adc6352d)
+2025-10-28 14:24:25.616 Removing orphaned files...
+2025-10-28 14:24:25.844 Caching message (hash=54b819f3e578b48c17ab129df45d4ab8)
+2025-10-28 14:24:25.859 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:24:31.466 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:24:32.868 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:24:32.874 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-db101fad220d06efbea61e833d54ee40-None"
+      bool_value: false
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:24:32.874 Beginning script thread
+2025-10-28 14:24:32.875 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-db101fad220d06efbea61e833d54ee40-None"
+  bool_value: false
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:24:32.875 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:24:32.875 Sessions still active: dict_keys([])
+2025-10-28 14:24:32.875 Files: 0; Sessions with files: 0
+2025-10-28 14:24:32.881 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:24:32.882 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:24:32.885 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:24:32.885 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:24:36.118 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:36.118 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:39.500 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:24:39.500 Memory cache HIT: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:24:42.398 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:42.398 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:43.461 Caching message (hash=c43b5d5ea90f8fe196752d563550c9bf)
+2025-10-28 14:24:43.617 Caching message (hash=0aa5ba66cb93b610a9f6101d903af42f)
+2025-10-28 14:24:43.695 Caching message (hash=b46c1c3313d20af9ad818d1eb875219a)
+2025-10-28 14:24:43.732 Removing orphaned files...
+2025-10-28 14:24:43.934 Caching message (hash=2db52b01b71f748ca57a1ab8658d3455)
+2025-10-28 14:24:43.961 Script run finished successfully; removing expired entries from MessageCache (max_age=2)
+2025-10-28 14:24:47.614 Runtime state: RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED -> RuntimeState.NO_SESSIONS_CONNECTED
+2025-10-28 14:24:48.884 Runtime state: RuntimeState.NO_SESSIONS_CONNECTED -> RuntimeState.ONE_OR_MORE_SESSIONS_CONNECTED
+2025-10-28 14:24:48.884 Received the following back message:
+rerun_script {
+  widget_states {
+    widgets {
+      id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+      string_array_value {
+        data: "2025/10/07"
+        data: "2025/10/07"
+      }
+    }
+    widgets {
+      id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+      int_value: 0
+    }
+    widgets {
+      id: "$$WIDGET_ID-db101fad220d06efbea61e833d54ee40-None"
+      bool_value: false
+    }
+  }
+  page_script_hash: "3f41e546893dc64b71aaacad12cad815"
+}
+
+2025-10-28 14:24:48.884 Beginning script thread
+2025-10-28 14:24:48.884 Running script RerunData(widget_states=widgets {
+  id: "$$WIDGET_ID-ff92ef6ec2f0be15f08954dc680386d8-periodo_form"
+  string_array_value {
+    data: "2025/10/07"
+    data: "2025/10/07"
+  }
+}
+widgets {
+  id: "$$WIDGET_ID-917bd710e9d4cb9d33125e57c9411fef-sel_prioridad_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-d4c95b517e4f4087e3d80b1a73be0d53-sel_municipio_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-cc62c084a1e3cc23e0518cef8a9c1eae-sel_dfederal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-0148b5f662fd62a923fce692b2a02cc0-sel_dlocal_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-1683cdd6882907de95eb4eda33fd09c0-sel_map_action_form"
+  int_value: 0
+}
+widgets {
+  id: "$$WIDGET_ID-db101fad220d06efbea61e833d54ee40-None"
+  bool_value: false
+}
+, page_script_hash='3f41e546893dc64b71aaacad12cad815')
+2025-10-28 14:24:48.884 Disconnecting files for session with ID dc9e2631-b515-4967-9320-778964480474
+2025-10-28 14:24:48.885 Sessions still active: dict_keys([])
+2025-10-28 14:24:48.885 Files: 0; Sessions with files: 0
+2025-10-28 14:24:48.890 Cache key: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:24:48.890 Memory cache HIT: 5d825267afdbfc680f1d9d393bed650c
+2025-10-28 14:24:48.892 Cache key: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:24:48.892 Memory cache HIT: ae96347188cd0a256782fb5fe9f5ef95
+2025-10-28 14:24:52.341 Cache key: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:52.341 Memory cache HIT: 06196a5effb05fda25774c43d2bf1646
+2025-10-28 14:24:55.885 Cache key: 43a16223d18a288f6563feb91061693f
+2025-10-28 14:24:55.885 Memory cache HIT: 43a16223d18a288f6563feb91061693f

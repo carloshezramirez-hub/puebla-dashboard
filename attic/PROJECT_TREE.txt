@@ -1,0 +1,354 @@
+=== TREE SIMPLIFICADO (profundidad 3) ===
+.
+./tools
+./tools/clean_geom.py
+./PROJECT_TREE.txt
+./.DS_Store
+./requirements.txt
+./train_model.py
+./runtime.txt
+./.streamlit
+./.streamlit/config.toml
+./.streamlit/secrets.toml
+./train_model.py.save
+./.devcontainer
+./.devcontainer/devcontainer.json
+./README.md
+./.gitignore
+./app.py
+./data
+./data/shp_municipio
+./data/shp_municipio/MUNICIPIO.dbf
+./data/shp_municipio/MUNICIPIO.shp
+./data/shp_municipio/MUNICIPIO.shx
+./data/shp_municipio/MUNICIPIO.prj
+./data/.DS_Store
+./data/shp_seccion
+./data/shp_seccion/SECCION.prj
+./data/shp_seccion/SECCION.shx
+./data/shp_seccion/SECCION.shp
+./data/shp_seccion/SECCION.dbf
+./data/secciones_puebla.geojson.bak
+./data/secciones_puebla.geojson
+./data/overlays
+./data/overlays/mercados.geojson
+./data/overlays/ferrocarril.geojson
+./data/overlays/escuelas.geojson
+./data/overlays/municipios.geojson
+./data/overlays/hospitales.geojson
+./data/overlays/distritos_federales.outliers.csv
+./data/overlays/distritos_federales.geojson
+./data/overlays/rios.geojson
+./data/overlays/lagos.geojson
+./data/overlays/municipios.outliers.csv
+./data/overlays/distritos_federales.geojson.bak
+./data/overlays/centros_comerciales.geojson
+./data/overlays/distritos_locales.geojson
+./data/overlays/vialidad.geojson
+./data/overlays/distritos_locales.outliers.csv
+./data/overlays/distritos_locales.geojson.bak
+./data/overlays/municipios.geojson.bak
+./data/model.joblib
+./data/secciones_puebla.outliers.csv
+./data/shp_distrito_local
+./data/shp_distrito_local/DISTRITO_LOCAL.prj
+./data/shp_distrito_local/DISTRITO_LOCAL.dbf
+./data/shp_distrito_local/DISTRITO_LOCAL.shp
+./data/shp_distrito_local/DISTRITO_LOCAL.shx
+./data/historicos.csv
+./data/alta_prioridad.csv
+./data/datos_puebla.csv
+./data/shp_distrito_federal
+./data/shp_distrito_federal/DISTRITO_FEDERAL.prj
+./data/shp_distrito_federal/DISTRITO_FEDERAL.dbf
+./data/shp_distrito_federal/DISTRITO_FEDERAL.shp
+./data/shp_distrito_federal/DISTRITO_FEDERAL.shx
+./data/21 PUEBLA
+./data/21 PUEBLA/ESCUELA.shx
+./data/21 PUEBLA/VEREDA.dbf
+./data/21 PUEBLA/MODULO.shp
+./data/21 PUEBLA/COLONIA_PUNTUAL.dbf
+./data/21 PUEBLA/INSTALACIONES_BANCARIAS.shx
+./data/21 PUEBLA/VIALIDAD.dbf
+./data/21 PUEBLA/RASGO_COMPLEMENTARIO_L.dbf
+./data/21 PUEBLA/RASGO_COMPLEMENTARIO_A.prj
+./data/21 PUEBLA/COLONIA.shx
+./data/21 PUEBLA/MODULO.shx
+./data/21 PUEBLA/ESCUELA.shp
+./data/21 PUEBLA/INSTALACIONES_DEPORTIVAS.prj
+./data/21 PUEBLA/INSTALACIONES_BANCARIAS.shp
+./data/21 PUEBLA/ADOQUIN.dbf
+./data/21 PUEBLA/CENTRO_CULTURAL.prj
+./data/21 PUEBLA/MUNICIPIO.dbf
+./data/21 PUEBLA/LINEA_METRO_P.prj
+./data/21 PUEBLA/COLONIA.shp
+./data/21 PUEBLA/AEROPUERTO.prj
+./data/21 PUEBLA/CENTRO_COMERCIAL.prj
+./data/21 PUEBLA/LIMITE_LOCALIDAD.shp
+./data/21 PUEBLA/BRECHA.prj
+./data/21 PUEBLA/PUENTE.dbf
+./data/21 PUEBLA/.DS_Store
+./data/21 PUEBLA/CABECERA_MUNICIPAL.shx
+./data/21 PUEBLA/CEMENTERIO.shp
+./data/21 PUEBLA/VOCAL_EJECUTIVO_DISTRITAL.shp
+./data/21 PUEBLA/MANZANA.shp
+./data/21 PUEBLA/AUTOPISTA.shx
+./data/21 PUEBLA/LOCALIDAD.prj
+./data/21 PUEBLA/PAVIMENTADA.prj
+./data/21 PUEBLA/MANCHA_URBANA.prj
+./data/21 PUEBLA/PASTO.dbf
+./data/21 PUEBLA/EDIFICIO.prj
+./data/21 PUEBLA/VOCAL_ESTATAL_DEL_RFE.dbf
+./data/21 PUEBLA/LIMITE_LOCALIDAD.shx
+./data/21 PUEBLA/CAPITAL.prj
+./data/21 PUEBLA/CEMENTERIO.shx
+./data/21 PUEBLA/CABECERA_MUNICIPAL.shp
+./data/21 PUEBLA/MANZANA.shx
+./data/21 PUEBLA/AUTOPISTA.shp
+./data/21 PUEBLA/LINEA_METRO_L.dbf
+./data/21 PUEBLA/VOCAL_EJECUTIVO_DISTRITAL.shx
+./data/21 PUEBLA/HOSPITAL.dbf
+./data/21 PUEBLA/IGLESIA.prj
+./data/21 PUEBLA/LINEA_METRO_L.shp
+./data/21 PUEBLA/AUTOPISTA.dbf
+./data/21 PUEBLA/OFICINA_MUNICIPAL.prj
+./data/21 PUEBLA/HOSPITAL.shp
+./data/21 PUEBLA/PASTO.shp
+./data/21 PUEBLA/TERRACERIA.prj
+./data/21 PUEBLA/PUENTE.shx
+./data/21 PUEBLA/DISTRITO_FEDERAL.prj
+./data/21 PUEBLA/CABECERA_MUNICIPAL.dbf
+./data/21 PUEBLA/VOCAL_ESTATAL_DEL_RFE.shp
+./data/21 PUEBLA/ENTIDAD.prj
+./data/21 PUEBLA/MERCADO.prj
+./data/21 PUEBLA/MANZANA.dbf
+./data/21 PUEBLA/LINEA_METRO_L.shx
+./data/21 PUEBLA/VOCAL_EJECUTIVO_DISTRITAL.dbf
+./data/21 PUEBLA/HOSPITAL.shx
+./data/21 PUEBLA/OFICINA_GUBERNAMENTAL.prj
+./data/21 PUEBLA/PASTO.shx
+./data/21 PUEBLA/PUENTE.shp
+./data/21 PUEBLA/CEMENTERIO.dbf
+./data/21 PUEBLA/VOCAL_DISTRITAL_DEL_RFE.prj
+./data/21 PUEBLA/VOCAL_ESTATAL_DEL_RFE.shx
+./data/21 PUEBLA/LIMITE_LOCALIDAD.dbf
+./data/21 PUEBLA/LAGOS.prj
+./data/21 PUEBLA/ADOQUIN.shp
+./data/21 PUEBLA/RASGO_COMPLEMENTARIO_L.shx
+./data/21 PUEBLA/MUNICIPIO.shp
+./data/21 PUEBLA/FERROCARRIL.prj
+./data/21 PUEBLA/CENTRAL_AUTOBUS.prj
+./data/21 PUEBLA/COLONIA.dbf
+./data/21 PUEBLA/PLAZA_MONUMENTO.prj
+./data/21 PUEBLA/DISTRITO_LOCAL.prj
+./data/21 PUEBLA/VEREDA.shx
+./data/21 PUEBLA/ESCUELA.dbf
+./data/21 PUEBLA/VIALIDAD.shx
+./data/21 PUEBLA/INSTALACIONES_BANCARIAS.dbf
+./data/21 PUEBLA/COLONIA_PUNTUAL.shx
+./data/21 PUEBLA/CENTRO_RECREATIVO.prj
+./data/21 PUEBLA/RIOS.prj
+./data/21 PUEBLA/RASGO_COMPLEMENTARIO_L.shp
+./data/21 PUEBLA/MUNICIPIO.shx
+./data/21 PUEBLA/ADOQUIN.shx
+./data/21 PUEBLA/VOCAL_EJECUTIVO_ESTATAL.prj
+./data/21 PUEBLA/MODULO.dbf
+./data/21 PUEBLA/VEREDA.shp
+./data/21 PUEBLA/COLONIA_PUNTUAL.shp
+./data/21 PUEBLA/VIALIDAD.shp
+./data/21 PUEBLA/MODULO.prj
+./data/21 PUEBLA/INSTALACIONES_DEPORTIVAS.shx
+./data/21 PUEBLA/VOCAL_EJECUTIVO_ESTATAL.dbf
+./data/21 PUEBLA/CENTRO_CULTURAL.shx
+./data/21 PUEBLA/CENTRO_RECREATIVO.dbf
+./data/21 PUEBLA/RIOS.dbf
+./data/21 PUEBLA/RASGO_COMPLEMENTARIO_A.shp
+./data/21 PUEBLA/LINEA_METRO_P.shx
+./data/21 PUEBLA/AEROPUERTO.shx
+./data/21 PUEBLA/ESCUELA.prj
+./data/21 PUEBLA/DISTRITO_LOCAL.dbf
+./data/21 PUEBLA/PLAZA_MONUMENTO.dbf
+./data/21 PUEBLA/INSTALACIONES_BANCARIAS.prj
+./data/21 PUEBLA/INSTALACIONES_DEPORTIVAS.shp
+./data/21 PUEBLA/CENTRO_CULTURAL.shp
+./data/21 PUEBLA/FERROCARRIL.dbf
+./data/21 PUEBLA/LAGOS.dbf
+./data/21 PUEBLA/RASGO_COMPLEMENTARIO_A.shx
+./data/21 PUEBLA/AEROPUERTO.shp
+./data/21 PUEBLA/CENTRAL_AUTOBUS.dbf
+./data/21 PUEBLA/COLONIA.prj
+./data/21 PUEBLA/LINEA_METRO_P.shp
+./data/21 PUEBLA/OFICINA_GUBERNAMENTAL.dbf
+./data/21 PUEBLA/EDIFICIO.shx
+./data/21 PUEBLA/CENTRO_COMERCIAL.shp
+./data/21 PUEBLA/LIMITE_LOCALIDAD.prj
+./data/21 PUEBLA/BRECHA.shp
+./data/21 PUEBLA/CAPITAL.shx
+./data/21 PUEBLA/VOCAL_DISTRITAL_DEL_RFE.dbf
+./data/21 PUEBLA/CEMENTERIO.prj
+./data/21 PUEBLA/MANZANA.prj
+./data/21 PUEBLA/VOCAL_EJECUTIVO_DISTRITAL.prj
+./data/21 PUEBLA/MERCADO.dbf
+./data/21 PUEBLA/ENTIDAD.dbf
+./data/21 PUEBLA/PAVIMENTADA.shp
+./data/21 PUEBLA/LOCALIDAD.shp
+./data/21 PUEBLA/IGLESIA.shx
+./data/21 PUEBLA/MANCHA_URBANA.shp
+./data/21 PUEBLA/CENTRO_COMERCIAL.shx
+./data/21 PUEBLA/EDIFICIO.shp
+./data/21 PUEBLA/CAPITAL.shp
+./data/21 PUEBLA/BRECHA.shx
+./data/21 PUEBLA/DISTRITO_FEDERAL.dbf
+./data/21 PUEBLA/CABECERA_MUNICIPAL.prj
+./data/21 PUEBLA/TERRACERIA.dbf
+./data/21 PUEBLA/AUTOPISTA.prj
+./data/21 PUEBLA/LOCALIDAD.shx
+./data/21 PUEBLA/PAVIMENTADA.shx
+./data/21 PUEBLA/MANCHA_URBANA.shx
+./data/21 PUEBLA/OFICINA_MUNICIPAL.dbf
+./data/21 PUEBLA/IGLESIA.shp
+./data/21 PUEBLA/MERCADO.shx
+./data/21 PUEBLA/ENTIDAD.shx
+./data/21 PUEBLA/LINEA_METRO_L.prj
+./data/21 PUEBLA/IGLESIA.dbf
+./data/21 PUEBLA/OFICINA_MUNICIPAL.shp
+./data/21 PUEBLA/HOSPITAL.prj
+./data/21 PUEBLA/EDIFICIO.dbf
+./data/21 PUEBLA/OFICINA_GUBERNAMENTAL.shx
+./data/21 PUEBLA/PASTO.prj
+./data/21 PUEBLA/DISTRITO_FEDERAL.shp
+./data/21 PUEBLA/VOCAL_DISTRITAL_DEL_RFE.shx
+./data/21 PUEBLA/TERRACERIA.shp
+./data/21 PUEBLA/CAPITAL.dbf
+./data/21 PUEBLA/VOCAL_ESTATAL_DEL_RFE.prj
+./data/21 PUEBLA/MERCADO.shp
+./data/21 PUEBLA/ENTIDAD.shp
+./data/21 PUEBLA/OFICINA_MUNICIPAL.shx
+./data/21 PUEBLA/MANCHA_URBANA.dbf
+./data/21 PUEBLA/PAVIMENTADA.dbf
+./data/21 PUEBLA/LOCALIDAD.dbf
+./data/21 PUEBLA/OFICINA_GUBERNAMENTAL.shp
+./data/21 PUEBLA/CENTRO_COMERCIAL.dbf
+./data/21 PUEBLA/TERRACERIA.shx
+./data/21 PUEBLA/VOCAL_DISTRITAL_DEL_RFE.shp
+./data/21 PUEBLA/PUENTE.prj
+./data/21 PUEBLA/DISTRITO_FEDERAL.shx
+./data/21 PUEBLA/BRECHA.dbf
+./data/21 PUEBLA/CENTRO_CULTURAL.dbf
+./data/21 PUEBLA/CENTRO_RECREATIVO.shx
+./data/21 PUEBLA/FERROCARRIL.shp
+./data/21 PUEBLA/MUNICIPIO.prj
+./data/21 PUEBLA/RIOS.shx
+./data/21 PUEBLA/VOCAL_EJECUTIVO_ESTATAL.shx
+./data/21 PUEBLA/ADOQUIN.prj
+./data/21 PUEBLA/LAGOS.shp
+./data/21 PUEBLA/AEROPUERTO.dbf
+./data/21 PUEBLA/LINEA_METRO_P.dbf
+./data/21 PUEBLA/CENTRAL_AUTOBUS.shp
+./data/21 PUEBLA/PLAZA_MONUMENTO.shp
+./data/21 PUEBLA/DISTRITO_LOCAL.shp
+./data/21 PUEBLA/INSTALACIONES_DEPORTIVAS.dbf
+./data/21 PUEBLA/LAGOS.shx
+./data/21 PUEBLA/VOCAL_EJECUTIVO_ESTATAL.shp
+./data/21 PUEBLA/RIOS.shp
+./data/21 PUEBLA/RASGO_COMPLEMENTARIO_L.prj
+./data/21 PUEBLA/CENTRO_RECREATIVO.shp
+./data/21 PUEBLA/FERROCARRIL.shx
+./data/21 PUEBLA/CENTRAL_AUTOBUS.shx
+./data/21 PUEBLA/RASGO_COMPLEMENTARIO_A.dbf
+./data/21 PUEBLA/PLAZA_MONUMENTO.shx
+./data/21 PUEBLA/VEREDA.prj
+./data/21 PUEBLA/DISTRITO_LOCAL.shx
+./data/21 PUEBLA/VIALIDAD.prj
+./data/21 PUEBLA/COLONIA_PUNTUAL.prj
+./backups
+./backups/overlays_2025-10-27_1428
+./backups/overlays_2025-10-27_1428/mercados.geojson
+./backups/overlays_2025-10-27_1428/ferrocarril.geojson
+./backups/overlays_2025-10-27_1428/escuelas.geojson
+./backups/overlays_2025-10-27_1428/municipios.geojson
+./backups/overlays_2025-10-27_1428/hospitales.geojson
+./backups/overlays_2025-10-27_1428/distritos_federales.geojson
+./backups/overlays_2025-10-27_1428/rios.geojson
+./backups/overlays_2025-10-27_1428/lagos.geojson
+./backups/overlays_2025-10-27_1428/centros_comerciales.geojson
+./backups/overlays_2025-10-27_1428/distritos_locales.geojson
+./backups/overlays_2025-10-27_1428/vialidad.geojson
+./requirements311.txt
+
+=== SHP encontrados ===
+data/21 PUEBLA/ADOQUIN.shp
+data/21 PUEBLA/AEROPUERTO.shp
+data/21 PUEBLA/AUTOPISTA.shp
+data/21 PUEBLA/BRECHA.shp
+data/21 PUEBLA/CABECERA_MUNICIPAL.shp
+data/21 PUEBLA/CAPITAL.shp
+data/21 PUEBLA/CEMENTERIO.shp
+data/21 PUEBLA/CENTRAL_AUTOBUS.shp
+data/21 PUEBLA/CENTRO_COMERCIAL.shp
+data/21 PUEBLA/CENTRO_CULTURAL.shp
+data/21 PUEBLA/CENTRO_RECREATIVO.shp
+data/21 PUEBLA/COLONIA.shp
+data/21 PUEBLA/COLONIA_PUNTUAL.shp
+data/21 PUEBLA/DISTRITO_FEDERAL.shp
+data/21 PUEBLA/DISTRITO_LOCAL.shp
+data/21 PUEBLA/EDIFICIO.shp
+data/21 PUEBLA/ENTIDAD.shp
+data/21 PUEBLA/ESCUELA.shp
+data/21 PUEBLA/FERROCARRIL.shp
+data/21 PUEBLA/HOSPITAL.shp
+data/21 PUEBLA/IGLESIA.shp
+data/21 PUEBLA/INSTALACIONES_BANCARIAS.shp
+data/21 PUEBLA/INSTALACIONES_DEPORTIVAS.shp
+data/21 PUEBLA/LAGOS.shp
+data/21 PUEBLA/LIMITE_LOCALIDAD.shp
+data/21 PUEBLA/LINEA_METRO_L.shp
+data/21 PUEBLA/LINEA_METRO_P.shp
+data/21 PUEBLA/LOCALIDAD.shp
+data/21 PUEBLA/MANCHA_URBANA.shp
+data/21 PUEBLA/MANZANA.shp
+data/21 PUEBLA/MERCADO.shp
+data/21 PUEBLA/MODULO.shp
+data/21 PUEBLA/MUNICIPIO.shp
+data/21 PUEBLA/OFICINA_GUBERNAMENTAL.shp
+data/21 PUEBLA/OFICINA_MUNICIPAL.shp
+data/21 PUEBLA/PASTO.shp
+data/21 PUEBLA/PAVIMENTADA.shp
+data/21 PUEBLA/PLAZA_MONUMENTO.shp
+data/21 PUEBLA/PUENTE.shp
+data/21 PUEBLA/RASGO_COMPLEMENTARIO_A.shp
+data/21 PUEBLA/RASGO_COMPLEMENTARIO_L.shp
+data/21 PUEBLA/RIOS.shp
+data/21 PUEBLA/TERRACERIA.shp
+data/21 PUEBLA/VEREDA.shp
+data/21 PUEBLA/VIALIDAD.shp
+data/21 PUEBLA/VOCAL_DISTRITAL_DEL_RFE.shp
+data/21 PUEBLA/VOCAL_EJECUTIVO_DISTRITAL.shp
+data/21 PUEBLA/VOCAL_EJECUTIVO_ESTATAL.shp
+data/21 PUEBLA/VOCAL_ESTATAL_DEL_RFE.shp
+data/shp_distrito_federal/DISTRITO_FEDERAL.shp
+data/shp_distrito_local/DISTRITO_LOCAL.shp
+data/shp_municipio/MUNICIPIO.shp
+data/shp_seccion/SECCION.shp
+
+=== GEOJSON en overlays ===
+data/overlays/centros_comerciales.geojson
+data/overlays/distritos_federales.geojson
+data/overlays/distritos_locales.geojson
+data/overlays/escuelas.geojson
+data/overlays/ferrocarril.geojson
+data/overlays/hospitales.geojson
+data/overlays/lagos.geojson
+data/overlays/mercados.geojson
+data/overlays/municipios.geojson
+data/overlays/rios.geojson
+data/overlays/vialidad.geojson
+
+=== Tamaños por carpeta en data (2 niveles) ===
+3.4M	data/shp_municipio
+ 10M	data/shp_seccion
+ 44M	data/overlays
+1.3M	data/shp_distrito_local
+992K	data/shp_distrito_federal
+151M	data/21 PUEBLA
+263M	data
