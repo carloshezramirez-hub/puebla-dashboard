@@ -1,0 +1,14 @@
+# ignora cosas comunes
+.venv/
+__pycache__/
+.DS_Store
+
+# no subas datos pesados por ahora
+data/
+
+# editores
+.vscode/
+.idea/
+
+# streamlit secretos
+.streamlit/secrets.toml
