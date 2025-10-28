@@ -12,3 +12,4 @@ data/
 
 # streamlit secretos
 .streamlit/secrets.toml
+attic/
